@@ -20,12 +20,7 @@ body {
   line-height: 1.4;
 }
 
-main{
-  background-image: url(../images/background.png);
-  box-shadow: inset 0 0 0 2000px rgba(67, 67, 67, 0.3);
 
-
-}
 
 
 img {
@@ -33,58 +28,83 @@ img {
 }
 
 header {
-  background-color: #202a84;
+  background-color: #000000;
+  color: #fff;
   margin: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
 }
 
 .logo img { 
-  align-items: ;
   width: 70%;
-
 }
 
-nav {
-  display: none;
-}
 
-input.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-input.nav-toggle:checked ~ nav {
-  display: block;
-}
-
-label.nav-toggle-label {
-  display: block;
-  color: #ffffff;
-  width: 100%;
-}
 
 nav ul{
   list-style-type: none;
-  color: rgb(235, 235, 235);
-
-}
-
-nav ul li{
-  text-decoration: none;
-  color: #fff;
-}
-
-.banner {
+  display:flex;
+  gap: 1em;
+  
   
 }
 
+nav ul li {
+  border-radius: 5%;
+  border-color: #f6cf35;
+  border: 10px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f6cf35;
+
+}
+
+nav ul li a:hover {
+  color:rgb(247, 105, 183);
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.banner img{
+  grid-row: 1;
+}
+
+h2{
+  text-align: center;
+}
+
+.about-jojo {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.about-jojo h3{
+  text-align: center;
+}
+
+.creator {
+  margin: 2em;
+}
+
+.creator p {
+  display: flex;
+  flex-direction: column;
+  
+}
 .newsletter {
   background-color: #222;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 1em;
 }
 
@@ -93,13 +113,42 @@ nav ul li{
   
 }
 
-.newsletter button{
-align-items: center;
+.newsletter button:hover {
+  color: rgb(247, 105, 183);
+  background-color: rgb(48, 48, 48);
+
+}
+
+.part1 {
+  margin: 1em;
+}
+
+.part1 h1{
+  text-align: center;
+}
+
+.part2 {
+  margin: 1em;
+}
+
+.part2 h1{
+  text-align: center;
+}
+
+.part3 {
+  margin: 1em;
+}
+
+.part3 h1{
+  text-align: center;
 }
 
 .jojo {
   display: grid;
   grid-template-columns: 1fr;
+}
+.jojo h2 {
+  text-align: center;
 }
 
 .villains {
@@ -107,7 +156,44 @@ align-items: center;
   grid-template-columns: 1fr; 
 }
 
+.villains  h2 {
+  text-align: center;
+}
+
 .jobros {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.jojo img{
+  border-radius: 50%;
+  width: 50%;
+}
+
+.jojo article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.villains img{
+  border-radius: 50%;
+  width: 50%;
+}
+
+.villains  article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobros img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.jobros  article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
