@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+ 
+}
+
+body {
+  margin: 0;
+  font-family:'Georgia', sans-serif;
+  color: #222;
+  scroll-behavior: smooth;
+  line-height: 1.4;
+}
+
+main{
+  background-image: url(../images/background.png);
+  box-shadow: inset 0 0 0 2000px rgba(67, 67, 67, 0.3);
+
+
+}
+
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #202a84;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo img { 
+  align-items: ;
+  width: 70%;
+
+}
+
+nav {
+  display: none;
+}
+
+input.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+input.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+label.nav-toggle-label {
+  display: block;
+  color: #ffffff;
+  width: 100%;
+}
+
+nav ul{
+  list-style-type: none;
+  color: rgb(235, 235, 235);
+
+}
+
+nav ul li{
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner {
+  
+}
+
+.newsletter {
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+}
+
+.newsletter h3{
+  text-align: center;
+  
+}
+
+.newsletter button{
+align-items: center;
+}
+
+.jojo {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.villains {
+  display: grid;
+  grid-template-columns: 1fr; 
+}
+
+.jobros {
+  display: grid;
+  grid-template-columns: 1fr;
+}
