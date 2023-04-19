@@ -67,15 +67,11 @@ h3 {
 
 p {
   font-size: var(--font-size-md);
+  text-shadow: rgb(161, 160, 160) 0.1em 0.1em 0.2em;
 }
 
 li {
   font-size: var(--font-size-md);
-}
-
-img:hover {
-  opacity: .90;
-  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 nav ul{
@@ -423,6 +419,11 @@ footer ul {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
    }
+
+   img:hover {
+    opacity: .90;
+    box-shadow: black 0.25em 0.25em 0.25em;
+  }
 
   h1 {
     color: #f6cf35;
