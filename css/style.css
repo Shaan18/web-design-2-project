@@ -8,19 +8,24 @@
     box-sizing: border-box;
 }
 
-html {
- 
-}
-
 body {
   margin: 0;
-  font-family:'Georgia', sans-serif;
+  font-family: 'Gelasio', serif;
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.4;
+  background-image: url(../images/background.png);
 }
 
-
+:root {
+  --font-size-sm: clamp(0.83rem, 0.01vw + 0.83rem, 0.84rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.2rem, 0.87vw + 0.98rem, 1.68rem);
+  --font-size-lg: clamp(1.44rem, 1.7vw + 1.02rem, 2.37rem);
+  --font-size-xl: clamp(1.73rem, 2.96vw + 0.99rem, 3.36rem);
+  --font-size-xxl: clamp(2.07rem, 4.86vw + 0.86rem, 4.75rem);
+  --font-size-xxxl: clamp(2.49rem, 7.68vw + 0.57rem, 6.71rem);
+}
 
 
 img {
@@ -28,10 +33,12 @@ img {
 }
 
 header {
-  background-color: #000000;
+  background-color: #0f0f0f;
   color: #fff;
   margin: 0;
+  padding: 0 1em;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -40,14 +47,41 @@ header {
   width: 70%;
 }
 
+.logo img:hover {
+  opacity: .2;
+  
+}
 
+h1 {
+  font-size: var(--font-size-xxl);
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-size: var(--font-size-md);
+}
+
+li {
+  font-size: var(--font-size-md);
+}
+
+img:hover {
+  opacity: .90;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
 
 nav ul{
   list-style-type: none;
   display:flex;
-  gap: 1em;
-  
-  
+  gap: 2em; 
 }
 
 nav ul li {
@@ -76,6 +110,10 @@ nav ul li a:hover {
 .banner img{
   grid-row: 1;
 }
+.banner h1 {
+  grid-column: 1;
+  grid-row: 2;
+}
 
 h2{
   text-align: center;
@@ -91,6 +129,10 @@ h2{
   text-align: center;
 }
 
+.about-jojo img:hover {
+  opacity: .5;
+}
+
 .creator {
   margin: 2em;
 }
@@ -101,7 +143,7 @@ h2{
   
 }
 .newsletter {
-  background-color: #222;
+  background-color: #0f0f0f;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -110,7 +152,7 @@ h2{
 
 .newsletter h3{
   text-align: center;
-  
+  color: #f6cf35;
 }
 
 .newsletter button:hover {
@@ -119,29 +161,156 @@ h2{
 
 }
 
-.part1 {
-  margin: 1em;
+.part1{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
-.part1 h1{
+.part1 h1 {
   text-align: center;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
+
 }
 
-.part2 {
+.part1 img {
+  margin: 0;
+  grid-row: 1;
+}
+
+.part1 p{
   margin: 1em;
+}
+
+.part2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .part2 h1{
   text-align: center;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.part3 {
+.part2 img {
+  margin: 0;
+  grid-row: 1;
+}
+
+.part2 p {
   margin: 1em;
+
+}
+
+.part3{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .part3 h1{
   text-align: center;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
 }
+
+.part3 img {
+  margin: 0;
+  grid-row: 1;
+}
+
+.part3 p{
+  margin: 1em;
+
+}
+
+.part4{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.part4 h1{
+  text-align: center;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.part4 img {
+  margin: 0;
+  grid-row: 1;
+}
+
+.part4 p{
+  margin: 1em;
+}
+
+.part5{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.part5 h1{
+  text-align: center;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.part5 img {
+  margin: 0;
+  grid-row: 1;
+}
+
+.part5 p{
+  margin: 1em;
+}
+
+.part6{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.part6 h1{
+  text-align: center;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.part6 img {
+  margin: 0;
+  grid-row: 1;
+}
+
+.part6 p{
+  margin: 1em;
+}
+
+.star {
+  color: rgb(255, 217, 0);
+}
+
+.star-half {
+  color: gold;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  padding-right: .9em;
+  justify-content: center;
+}
+
 
 .jojo {
   display: grid;
@@ -174,6 +343,11 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em;
+}
+
+.jojo p {
+  margin: .25em;
 }
 
 .villains img{
@@ -185,6 +359,11 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em;
+}
+
+.villains p {
+  margin: .25em;
 }
 
 .jobros img {
@@ -196,4 +375,171 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em;
 }
+
+.jobros p{
+  margin: .25em;
+}
+
+footer {
+  text-align: center;
+  background-color: #0f0f0f;
+  padding: 1.5em 0;
+}
+
+footer ul li{
+  list-style-type: none;
+}
+
+footer ul {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+ 
+}
+
+.fa {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  color: #f6cf35;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+  color: rgb(211, 0, 200);
+  opacity: .7;
+}
+
+@media only screen and (min-width: 38em){
+  .banner {
+    grid-template-rows: 1fr auto;
+ }
+
+ .banner img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+  h1 {
+    color: #f6cf35;
+    text-shadow: black 0.1em 0.1em 0.2em
+  } 
+
+  .about-jojo {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 5em;
+  } 
+
+  .creator img {
+    max-width: 70%;
+    margin: auto 5em;
+  }
+
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .part1 {
+    grid-template-rows: 1fr auto;
+  }
+
+  .part1 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+   .part2{
+    grid-template-rows: 1fr auto;
+  }
+
+  .part2 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+   .part3 {
+    grid-template-rows: 1fr auto;
+  }
+
+  .part3 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+   .part4 {
+    grid-template-rows: 1fr auto;
+  }
+
+  .part4 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+   .part5 {
+    grid-template-rows: 1fr auto;
+  }
+
+  .part5 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+   .part6 {
+    grid-template-rows: 1fr auto;
+  }
+
+  .part6 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+   }
+
+  .jojo {
+    grid-template-columns: 1fr 1fr;
+  } 
+
+  .villains {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .jobros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .creator img {
+    max-width: 50%;
+    margin-left: 20em;
+    align-items: center;
+  }
+
+  .jojo {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .villains {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .jobros {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+ 
+
+ 
