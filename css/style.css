@@ -153,6 +153,8 @@ h2{
 
 .newsletter button {
   margin: auto;
+  color: #222;
+  background-color: #f6cf35;
 }
 
 .newsletter button:hover {
