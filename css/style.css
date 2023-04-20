@@ -151,6 +151,10 @@ h2{
   color: #f6cf35;
 }
 
+.newsletter button {
+  margin: auto;
+}
+
 .newsletter button:hover {
   color: rgb(247, 105, 183);
   background-color: rgb(48, 48, 48);
