@@ -67,7 +67,8 @@ h3 {
 
 p {
   font-size: var(--font-size-md);
-  text-shadow: rgb(161, 160, 160) 0.1em 0.1em 0.2em;
+  background-color: #f4f4f4d1;
+  padding: 1em;
 }
 
 li {
